@@ -7,5 +7,5 @@ if __name__ == '__main__':
             numbers_room[number_person_index] <= t_min:
         res = numbers_room[-1] - numbers_room[0]
     else:
-        res = numbers_room[number_person_index] - numbers_room[0] + numbers_room[-1] - numbers_room[0]
+        res = min(numbers_room[number_person_index] - numbers_room[0],numbers_room[-1] -numbers_room[number_person_index])  + numbers_room[-1] - numbers_room[0]
     print(res)
